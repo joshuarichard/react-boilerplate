@@ -1,15 +1,15 @@
 import React from 'react';
-import { Header, P } from './style/components';
+import { Code, Containers, Header, Paragraph } from './style/components';
 
 function App() {
   return (
-    <div className="App">
+    <Containers.AppContainer className="App">
       <Header className="App-header">
-        <P>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </P>
+        <Paragraph>
+          Edit <Code>src/App.tsx</Code> and save to reload.
+        </Paragraph>
       </Header>
-    </div>
+    </Containers.AppContainer>
   );
 }
 
