@@ -2,11 +2,11 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { expect } from 'chai';
 import App from './App';
-import { P } from './style/components';
+import { Paragraph } from './components/styled';
 
 test('renders edit src/App.tsx alert', () => {
   const render = renderer.create(<App />);
-  const paragraph = render.root.findByType(P);
+  const paragraph = render.root.findByType(Paragraph);
   const kids = paragraph.props.children;
   expect(kids[0]).to.equal('Edit ');
   expect(kids[1])

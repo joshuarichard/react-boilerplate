@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Containers, Header, Paragraph } from './style/components';
+import { Code, Containers, Header, Paragraph } from './components/styled';
 
 function App() {
   return (
